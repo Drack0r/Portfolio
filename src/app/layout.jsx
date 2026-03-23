@@ -1,4 +1,13 @@
+import { Poppins } from "next/font/google";
+
+import Header from "@/components/layout/Header";
+
 import "./globals.css";
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Mon Portfolio",
@@ -9,7 +18,11 @@ function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head />
-      <body>
+      <body
+        className={`${poppins.className} text-dark bg-white antialiased`}
+        suppressHydrationWarning
+      >
+        <Header />
         <main>{children}</main>
       </body>
     </html>
