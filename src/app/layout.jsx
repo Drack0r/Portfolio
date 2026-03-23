@@ -1,5 +1,7 @@
 import { Poppins } from "next/font/google";
 
+import Header from "@/components/layout/Header";
+
 import "./globals.css";
 
 const poppins = Poppins({
@@ -17,9 +19,10 @@ function RootLayout({ children }) {
     <html lang="fr">
       <head />
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.className} text-dark bg-white antialiased`}
         suppressHydrationWarning
       >
+        <Header />
         <main>{children}</main>
       </body>
     </html>
