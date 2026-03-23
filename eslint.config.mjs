@@ -48,17 +48,7 @@ const eslintConfig = defineConfig([
           ],
         },
       ],
-      "simple-import-sort/exports": [
-        "error",
-        {
-          groups: [
-            // Named exports
-            ["^(?!.*default).*$"],
-            // Default exports
-            ["^.*default.*$"],
-          ],
-        },
-      ],
+      "simple-import-sort/exports": "error",
       "import/first": "error",
       "import/newline-after-import": "error",
       "import/no-duplicates": "error",
