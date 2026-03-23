@@ -29,7 +29,7 @@ function Header() {
 
       <nav>
         <ul className="flex gap-2.5">
-          {navigationItems.map((item, index) => (
+          {navigationItems.map((item) => (
             <li key={item.id}>
               <NavLink href={item.href}>{item.label}</NavLink>
             </li>
