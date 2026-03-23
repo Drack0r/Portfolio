@@ -31,10 +31,10 @@ const eslintConfig = defineConfig([
           groups: [
             // Node.js builtins prefixed with `node:`.
             ["^node:"],
-            // Packages. Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-            ["^@?\\w"],
             // React and Next.js imports
             ["^(react|next)(/.*)?$"],
+            // Packages. Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+            ["^@?\\w"],
             // Internal packages (adjust the pattern to match your project structure)
             ["^@/"],
             // Side effect imports.
@@ -59,7 +59,6 @@ const eslintConfig = defineConfig([
           ],
         },
       ],
-      "simple-import-sort/exports": "error",
       "import/first": "error",
       "import/newline-after-import": "error",
       "import/no-duplicates": "error",
