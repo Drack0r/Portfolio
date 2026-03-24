@@ -16,7 +16,7 @@ export const metadata = {
 
 function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <head />
       <body
         className={`${poppins.className} text-dark bg-white antialiased`}

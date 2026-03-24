@@ -14,7 +14,7 @@ function AboutSection() {
       />
 
       <div className="mx-auto my-14.5 w-[46.46vw]">
-        <h2 className="heading-4 after:bg-dark mb- relative mb-10.25 w-fit after:absolute after:-bottom-1 after:left-0 after:h-1.25 after:w-full after:content-['']">
+        <h2 className="heading-4 after:bg-dark relative mb-10.25 w-fit after:absolute after:-bottom-1 after:left-0 after:h-1.25 after:w-full after:content-['']">
           Présentation
         </h2>
 
