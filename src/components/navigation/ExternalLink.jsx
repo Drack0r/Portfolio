@@ -3,6 +3,7 @@ import clsx from "clsx";
 function ExternalLink({
   href,
   variant = "default",
+  size = "md",
   children,
   iconSrc,
   iconAlt,
@@ -10,9 +11,11 @@ function ExternalLink({
   const isMailto = href.startsWith("mailto:");
 
   const className = clsx(
-    "body-md-medium flex w-fit gap-2 rounded-md px-6 py-3 duration-300 hover:opacity-60",
+    "body-md-medium flex w-fit gap-2 rounded-md  duration-300 hover:opacity-60",
     (variant === "default" || variant === "icon") && "border border-dark",
     (variant === "dark" || variant === "icon-dark") && "text-white bg-black",
+    size === "md" && "px-6 py-3",
+    size === "sm" && "px-3 py-1.5",
   );
 
   return (
