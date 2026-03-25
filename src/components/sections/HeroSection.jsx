@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ExternalLink from "../ui/ExternalLink";
+import ExternalLink from "../navigation/ExternalLink";
 
 function HeroSection() {
   return (
