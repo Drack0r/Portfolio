@@ -23,6 +23,7 @@ function RootLayout({ children }) {
         suppressHydrationWarning
       >
         <Header />
+
         <main>{children}</main>
       </body>
     </html>

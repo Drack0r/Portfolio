@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import ExternalLink from "../ui/ExternalLink";
+import ExternalLink from "../navigation/ExternalLink";
+import Title from "../ui/Title";
 
 function AboutSection() {
   return (
@@ -14,9 +15,7 @@ function AboutSection() {
       />
 
       <div className="mx-auto my-14.5 w-[46.46vw]">
-        <h2 className="heading-4 after:bg-dark relative mb-10.25 w-fit after:absolute after:-bottom-1 after:left-0 after:h-1.25 after:w-full after:content-['']">
-          Présentation
-        </h2>
+        <Title className="mb-10.75">Présentation</Title>
 
         <div className="body-md-medium mb-14.5 flex flex-col gap-5">
           <p>

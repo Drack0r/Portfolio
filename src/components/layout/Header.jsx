@@ -1,15 +1,6 @@
 import Link from "next/link";
 
-function NavLink({ href, children }) {
-  return (
-    <a
-      href={href}
-      className="body-md-semibold px-5 py-2.5 duration-300 hover:bg-black hover:text-white"
-    >
-      {children}
-    </a>
-  );
-}
+import NavLink from "../navigation/NavLink";
 
 const navigationItems = [
   { id: "home", href: "#home", label: "Accueil" },
