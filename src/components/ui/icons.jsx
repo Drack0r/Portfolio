@@ -1,8 +1,8 @@
-export function CodeIcon({ className, width = 60, heigth = 60 }) {
+export function CodeIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,11 +24,11 @@ export function CodeIcon({ className, width = 60, heigth = 60 }) {
   );
 }
 
-export function DeviceIcon({ className, width = 60, heigth = 60 }) {
+export function DeviceIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +50,11 @@ export function DeviceIcon({ className, width = 60, heigth = 60 }) {
   );
 }
 
-export function LayoutIcon({ className, width = 60, heigth = 60 }) {
+export function LayoutIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +76,11 @@ export function LayoutIcon({ className, width = 60, heigth = 60 }) {
   );
 }
 
-export function SpeedIcon({ className, width = 60, heigth = 60 }) {
+export function SpeedIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -98,11 +98,11 @@ export function SpeedIcon({ className, width = 60, heigth = 60 }) {
   );
 }
 
-export function WebIcon({ className, width = 60, heigth = 60 }) {
+export function WebIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -123,11 +123,11 @@ export function WebIcon({ className, width = 60, heigth = 60 }) {
   );
 }
 
-export function EyeIcon({ className, width = 60, heigth = 60 }) {
+export function EyeIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
-      height={heigth}
+      height={height}
       viewBox="0 0 60 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
