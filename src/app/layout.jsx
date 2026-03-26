@@ -24,7 +24,7 @@ function RootLayout({ children }) {
       >
         <Header />
 
-        <main>{children}</main>
+        <main className="pt-20">{children}</main>
       </body>
     </html>
   );

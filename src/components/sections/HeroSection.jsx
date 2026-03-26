@@ -4,8 +4,9 @@ import ExternalLink from "../navigation/ExternalLink";
 
 function HeroSection() {
   return (
-    <section className="relative h-screen pt-20" id="home">
-      <div className="mx-auto mt-13.5 flex w-fit flex-col items-center gap-5">
+    <section className="relative h-[calc(100vh-80px)] scroll-mt-40" id="home">
+      <div className="mx-auto flex w-fit flex-col items-center gap-5 pt-13.5">
+        {/* mt-13.5 */}
         <p className="heading-6">Bonjour, je suis Antonin Chevolleau,</p>
         <h1 className="heading-1">Développeur front-end</h1>
       </div>
@@ -23,7 +24,7 @@ function HeroSection() {
         alt="Tâche de peinture multicolore"
         width={898}
         height={599}
-        className="absolute top-[22.36vh] left-1/2 -z-10 h-[58.49vh] w-auto -translate-x-1/2"
+        className="absolute top-[14vh] left-1/2 -z-10 h-[58.49vh] w-auto -translate-x-1/2"
       />
 
       <div className="absolute right-[2.7vw] bottom-[3.9vh] flex w-fit flex-col items-center gap-6">

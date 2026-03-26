@@ -7,11 +7,13 @@ function ExternalLink({
   children,
   iconSrc,
   iconAlt,
+  className,
 }) {
   const isMailto = href.startsWith("mailto:");
 
-  const className = clsx(
+  const customClassName = clsx(
     "body-md-medium flex w-fit gap-2 rounded-md  duration-300 hover:opacity-60",
+    className,
     (variant === "default" || variant === "icon") && "border border-dark",
     (variant === "dark" || variant === "icon-dark") && "text-white bg-black",
     size === "md" && "px-6 py-3",
@@ -23,7 +25,7 @@ function ExternalLink({
       href={href}
       target={isMailto ? undefined : "_blank"}
       rel={isMailto ? undefined : "noopener noreferrer"}
-      className={className}
+      className={customClassName}
     >
       {(variant === "icon" || variant === "icon-dark") && (
         <img

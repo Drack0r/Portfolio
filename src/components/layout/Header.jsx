@@ -13,7 +13,7 @@ const navigationItems = [
 
 function Header() {
   return (
-    <header className="shadow-3 fixed z-10 flex h-20 w-full items-center justify-between bg-white px-[2.7vw]">
+    <header className="shadow-3 fixed z-50 flex h-20 w-full items-center justify-between bg-white px-[2.7vw]">
       <Link href={"/"} className="heading-5">
         Antonin Chevolleau
       </Link>

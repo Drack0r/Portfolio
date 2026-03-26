@@ -5,19 +5,19 @@ import Title from "../ui/Title";
 
 function AboutSection() {
   return (
-    <section className="relative pt-20" id="about">
+    <section className="relative mt-30 scroll-mt-34" id="about">
       <Image
         src={"/images/atom.svg"}
         alt="Image d'un atome"
         width={212}
         height={212}
-        className="absolute top-51.25 left-[8.6vw]"
+        className="absolute top-22 left-[8vw]"
       />
 
       <div className="mx-auto my-14.5 w-[46.46vw]">
-        <Title className="mb-10.75">Présentation</Title>
+        <Title className="mb-14">Présentation</Title>
 
-        <div className="body-md-medium mb-14.5 flex flex-col gap-5">
+        <div className="body-md-medium mx-auto mb-14 flex flex-col gap-5">
           <p>
             Développeur web front-end depuis un an, je conçois des interfaces{" "}
             <span className="body-md-bold">modernes</span>,{" "}

@@ -8,8 +8,8 @@ function ProjectImage({ src, alt, width, height, badges, overlay }) {
       {/* Badges */}
       {badges && badges.length > 0 && (
         <div className="absolute top-2 left-2 z-20 flex gap-1">
-          {badges.map((badge, index) => (
-            <Badge key={index} src={badge.src} alt={badge.alt} />
+          {badges.map((badge) => (
+            <Badge key={badge.src} src={badge.src} alt={badge.alt} />
           ))}
         </div>
       )}
