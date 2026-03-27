@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 function Badge({ src, alt }) {
+  const customClassName = "shadow-2 h-8 w-8 rounded-full bg-white p-1";
+
   return (
     <div>
       <Image
@@ -8,7 +10,7 @@ function Badge({ src, alt }) {
         alt={alt}
         width={32}
         height={32}
-        className="shadow-2 h-8 w-8 rounded-full bg-white p-1"
+        className={customClassName}
       />
     </div>
   );

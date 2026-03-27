@@ -1,13 +1,13 @@
+import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
+import Title from "@/components/ui/Title";
 import projectItems from "@/data/projects.json";
-
-import ProjectCard from "../ui/ProjectCard/ProjectCard";
-import Title from "../ui/Title";
 
 function ProjectsSection() {
   return (
     <section className="mt-30 scroll-mt-35" id="projects">
       <Title className={"mx-auto mb-18"}>Mes derniers projets</Title>
 
+      {/* Card container */}
       <div className="mx-auto mb-14.5 flex w-166.5 flex-wrap gap-16.5">
         {projectItems.map((project) => (
           <ProjectCard

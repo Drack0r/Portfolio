@@ -3,8 +3,11 @@ import Image from "next/image";
 import Badge from "@/components/ui/Badge";
 
 function ProjectImage({ src, alt, width, height, badges, overlay }) {
+  const customClassName =
+    "relative h-[65%] w-full overflow-hidden rounded-t-[20px]";
+
   return (
-    <div className="relative h-[65%] w-full overflow-hidden rounded-t-[20px]">
+    <div className={customClassName}>
       {/* Badges */}
       {badges && badges.length > 0 && (
         <div className="absolute top-2 left-2 z-20 flex gap-1">

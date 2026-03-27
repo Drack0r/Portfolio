@@ -9,12 +9,14 @@ import Icon from "./Icon";
 function ServiceCard({ service }) {
   const [isHover, setIsHover] = useState(false);
 
+  const customClassName = clsx(
+    "shadow-7 flex size-75 flex-col items-center justify-center gap-8 rounded-[10px] border-2 border-black",
+    isHover && "bg-black text-white",
+  );
+
   return (
     <article
-      className={clsx(
-        "shadow-7 flex size-75 flex-col items-center justify-center gap-8 rounded-[10px] border-2 border-black",
-        isHover && "bg-black text-white",
-      )}
+      className={customClassName}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
