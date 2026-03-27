@@ -1,11 +1,12 @@
-import SkillProgress from "../ui/SkillProgress";
-import Title from "../ui/Title";
+import SkillProgress from "@/components/ui/SkillProgress";
+import Title from "@/components/ui/Title";
 
 function SkillsSection() {
   return (
     <section className="mt-30 scroll-mt-35" id="skills">
       <Title className="mx-auto mb-20">Mes compétences</Title>
 
+      {/* Progress bars container */}
       <div className="mx-auto mb-30 flex w-fit flex-col items-end gap-4">
         <SkillProgress
           iconSrc={"/images/icons/html5.png"}

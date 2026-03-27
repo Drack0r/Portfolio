@@ -1,33 +1,41 @@
 import Image from "next/image";
 
-import ExternalLink from "../navigation/ExternalLink";
+import ExternalLink from "@/components/navigation/ExternalLink";
 
 function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] scroll-mt-40" id="home">
-      <div className="mx-auto flex w-fit flex-col items-center gap-5 pt-13.5">
-        {/* mt-13.5 */}
+      {/* Text content */}
+      <header className="mx-auto flex w-fit flex-col items-center gap-5 pt-13.5">
         <p className="heading-6">Bonjour, je suis Antonin Chevolleau,</p>
         <h1 className="heading-1">Développeur front-end</h1>
-      </div>
+      </header>
 
+      {/* Photo */}
       <Image
         src={"/images/antonin.png"}
         alt="Photo d'Antonin Chevolleau"
-        width={1823.5}
-        height={1955}
+        width={400}
+        height={430}
+        priority
         className="absolute bottom-0 left-1/2 h-[69.82vh] w-auto -translate-x-1/2"
+        sizes="(max-width: 768px) 300px, 400px"
       />
 
+      {/* Splash image */}
       <Image
         src={"/images/color-splash.png"}
-        alt="Tâche de peinture multicolore"
-        width={898}
-        height={599}
+        alt=""
+        width={450}
+        height={300}
         className="absolute top-[14vh] left-1/2 -z-10 h-[58.49vh] w-auto -translate-x-1/2"
       />
 
-      <div className="absolute right-[2.7vw] bottom-[3.9vh] flex w-fit flex-col items-center gap-6">
+      {/* Actions */}
+      <nav
+        aria-label="Liens de navigation"
+        className="absolute right-[2.7vw] bottom-[3.9vh] flex w-fit flex-col items-center gap-6"
+      >
         <ExternalLink
           href={"mailto:antochevolleau@gmail.com"}
           variant="icon-dark"
@@ -45,7 +53,7 @@ function HeroSection() {
         >
           GitHub
         </ExternalLink>
-      </div>
+      </nav>
     </section>
   );
 }

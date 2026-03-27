@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import clsx from "clsx";
 
 function ExternalLink({
@@ -27,8 +29,9 @@ function ExternalLink({
       rel={isMailto ? undefined : "noopener noreferrer"}
       className={customClassName}
     >
+      {/* Icon */}
       {(variant === "icon" || variant === "icon-dark") && (
-        <img
+        <Image
           src={iconSrc}
           alt={iconAlt}
           width={24}

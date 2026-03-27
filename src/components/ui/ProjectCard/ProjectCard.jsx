@@ -21,12 +21,14 @@ function ProjectCard({
 }) {
   const [isHover, setIsHover] = useState(false);
 
+  const customClassName = clsx(
+    "relative h-80 w-75 rounded-[20px] transition-all duration-300",
+    isHover ? "shadow-6 scale-110" : "shadow-5",
+  );
+
   return (
     <article
-      className={clsx(
-        "relative h-80 w-75 rounded-[20px] transition-all duration-300",
-        isHover ? "shadow-6 scale-110" : "shadow-5",
-      )}
+      className={customClassName}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >

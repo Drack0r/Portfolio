@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import ExternalLink from "../navigation/ExternalLink";
-import Title from "../ui/Title";
+import ExternalLink from "@/components/navigation/ExternalLink";
+import Title from "@/components/ui/Title";
 
 function AboutSection() {
   return (
@@ -14,9 +14,11 @@ function AboutSection() {
         className="absolute top-22 left-[8vw]"
       />
 
+      {/* Text content */}
       <div className="mx-auto my-14.5 w-[46.46vw]">
         <Title className="mb-14">Présentation</Title>
 
+        {/* Description */}
         <div className="body-md-medium mx-auto mb-14 flex flex-col gap-5">
           <p>
             Développeur web front-end depuis un an, je conçois des interfaces{" "}
