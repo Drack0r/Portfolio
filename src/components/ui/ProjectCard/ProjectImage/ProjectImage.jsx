@@ -2,13 +2,13 @@ import Image from "next/image";
 
 import { Badge } from "@/components/ui";
 
-function ProjectImage({ src, alt, width, height, badges, overlay }) {
+function ProjectImage({ src, alt, badges, children }) {
   const customClassName =
     "relative h-[65%] w-full overflow-hidden rounded-t-[20px]";
 
   return (
     <div className={customClassName}>
-      {/* Badges */}
+      {/* Badges container */}
       {badges && badges.length > 0 && (
         <div className="absolute top-2 left-2 z-20 flex gap-1">
           {badges.map((badge) => (
@@ -21,13 +21,13 @@ function ProjectImage({ src, alt, width, height, badges, overlay }) {
       <Image
         src={src}
         alt={alt}
-        width={width}
-        height={height}
+        width={350}
+        height={350}
         className="h-full w-full object-cover"
       />
 
-      {/* Overlay */}
-      {overlay}
+      {/* Overaly */}
+      {children}
     </div>
   );
 }
