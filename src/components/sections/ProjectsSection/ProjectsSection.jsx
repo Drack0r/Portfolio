@@ -1,5 +1,4 @@
-import ProjectCard from "@/components/ui/ProjectCard/ProjectCard";
-import Title from "@/components/ui/Title";
+import { ProjectCard, Title } from "@/components/ui";
 import projectItems from "@/data/projects.json";
 
 function ProjectsSection() {

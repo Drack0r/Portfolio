@@ -1,5 +1,4 @@
-import SkillProgress from "@/components/ui/SkillProgress";
-import Title from "@/components/ui/Title";
+import { SkillProgress, Title } from "@/components/ui";
 
 function SkillsSection() {
   return (

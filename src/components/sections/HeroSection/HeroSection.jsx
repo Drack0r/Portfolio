@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ExternalLink from "@/components/navigation/ExternalLink";
+import { ExternalLink } from "@/components/navigation";
 
 function HeroSection() {
   return (

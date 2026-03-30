@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-import Input from "@/components/ui/Input";
-import TextArea from "@/components/ui/TextArea";
+import { Input, TextArea } from "@/components/ui";
 
 function ContactForm() {
   return (

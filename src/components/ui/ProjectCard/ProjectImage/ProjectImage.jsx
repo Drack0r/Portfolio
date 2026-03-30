@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Badge from "@/components/ui/Badge";
+import { Badge } from "@/components/ui";
 
 function ProjectImage({ src, alt, width, height, badges, overlay }) {
   const customClassName =

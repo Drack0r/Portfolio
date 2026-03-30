@@ -1,7 +1,5 @@
-import ContactForm from "@/components/ui/ContactForm";
-import Title from "@/components/ui/Title";
-
-import ExternalLink from "../navigation/ExternalLink";
+import { ExternalLink } from "@/components/navigation";
+import { ContactForm, Title } from "@/components/ui";
 
 function Footer() {
   return (

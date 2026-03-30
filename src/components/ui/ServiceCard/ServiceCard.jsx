@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import clsx from "clsx";
 
-import Icon from "./Icon";
+import { Icon } from "@/components/ui";
 
 function ServiceCard({ service }) {
   const [isHover, setIsHover] = useState(false);

@@ -1,4 +1,4 @@
-function NavLink({ href, children }) {
+function AnchorLink({ href, children }) {
   const customClassName =
     "body-md-semibold px-5 py-2.5 duration-300 hover:bg-black hover:text-white";
 
@@ -9,4 +9,4 @@ function NavLink({ href, children }) {
   );
 }
 
-export default NavLink;
+export default AnchorLink;

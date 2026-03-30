@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import ExternalLink from "@/components/navigation/ExternalLink";
-import Title from "@/components/ui/Title";
+import { ExternalLink } from "@/components/navigation";
+import { Title } from "@/components/ui";
 
 function AboutSection() {
   return (

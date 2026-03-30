@@ -4,9 +4,7 @@ import { useState } from "react";
 
 import clsx from "clsx";
 
-import ProjectContent from "./ProjectContent";
-import ProjectImage from "./ProjectImage";
-import ProjectOverlay from "./ProjectOverlay";
+import { ProjectContent, ProjectImage, ProjectOverlay } from ".";
 
 function ProjectCard({
   imgSrc,

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import NavLink from "@/components/navigation/NavLink";
-import navLinks from "@/data/nav-links.json";
+import { AnchorLink } from "@/components/navigation";
+import AnchorLinks from "@/data/nav-links.json";
 
 function Header() {
   const customClassName =
@@ -17,9 +17,9 @@ function Header() {
       {/* Navigation */}
       <nav>
         <ul className="flex gap-2.5">
-          {navLinks.map((navLink) => (
-            <li key={navLink.id}>
-              <NavLink href={navLink.href}>{navLink.label}</NavLink>
+          {AnchorLinks.map((link) => (
+            <li key={link.id}>
+              <AnchorLink href={link.href}>{link.label}</AnchorLink>
             </li>
           ))}
         </ul>

@@ -1,5 +1,4 @@
-import ServiceCard from "@/components/ui/ServiceCard";
-import Title from "@/components/ui/Title";
+import { ServiceCard, Title } from "@/components/ui";
 import servicesData from "@/data/services.json";
 
 function ServicesSection() {

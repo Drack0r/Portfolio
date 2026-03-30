@@ -30,7 +30,9 @@ function ExternalLink({
       className={customClassName}
     >
       {/* Icon */}
-      {(variant === "simpleIcon" || "icon" || "icon-dark") && (
+      {(variant === "simpleIcon" ||
+        variant === "icon" ||
+        variant === "icon-dark") && (
         <Image
           src={iconSrc}
           alt={iconAlt}
