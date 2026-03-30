@@ -4,8 +4,8 @@ import clsx from "clsx";
 
 function ExternalLink({
   href,
-  variant = "default",
-  size = "md",
+  variant = "default", // "default" | "icon" | "simpleIcon"
+  size = "md", // "sm" | "md"
   children,
   iconSrc,
   iconAlt,
@@ -18,8 +18,8 @@ function ExternalLink({
     className,
     (variant === "default" || variant === "icon") && "border border-dark",
     (variant === "dark" || variant === "icon-dark") && "text-white bg-black",
-    size === "md" && "px-6 py-3",
-    size === "sm" && "px-3 py-1.5",
+    variant !== "simpleIcon" && size === "md" && "px-6 py-3",
+    variant !== "simpleIcon" && size === "sm" && "px-3 py-1.5",
   );
 
   return (
@@ -30,7 +30,7 @@ function ExternalLink({
       className={customClassName}
     >
       {/* Icon */}
-      {(variant === "icon" || variant === "icon-dark") && (
+      {(variant === "simpleIcon" || "icon" || "icon-dark") && (
         <Image
           src={iconSrc}
           alt={iconAlt}
@@ -39,7 +39,7 @@ function ExternalLink({
           className="h-6 w-6"
         />
       )}
-      {children}
+      {variant !== "simpleIcon" && children}
     </a>
   );
 }

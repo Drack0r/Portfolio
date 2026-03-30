@@ -11,7 +11,7 @@ function ServiceCard({ service }) {
 
   const customClassName = clsx(
     "shadow-7 flex size-75 flex-col items-center justify-center gap-8 rounded-[10px] border-2 border-black",
-    isHover && "bg-black text-white",
+    isHover && "bg-black text-white cursor-pointer",
   );
 
   return (
