@@ -5,7 +5,7 @@ import AnchorLinks from "@/data/nav-links.json";
 
 function Header() {
   const customClassName =
-    "shadow-3 fixed z-50 flex h-20 w-full items-center justify-between bg-white px-[2.7vw]";
+    "shadow-3 fixed z-50 flex h-20 w-full max-w-[1920px] left-1/2 -translate-x-1/2 items-center justify-between bg-white px-[2.7vw]";
 
   return (
     <header className={customClassName}>

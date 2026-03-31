@@ -19,7 +19,7 @@ function RootLayout({ children }) {
     <html lang="fr" className="scroll-smooth">
       <head />
       <body
-        className={`${poppins.className} text-dark bg-white antialiased`}
+        className={`${poppins.className} text-dark relative mx-auto max-w-480 bg-white antialiased`}
         suppressHydrationWarning
       >
         <Header />

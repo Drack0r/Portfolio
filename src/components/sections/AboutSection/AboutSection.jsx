@@ -11,7 +11,7 @@ function AboutSection() {
         alt="Image d'un atome"
         width={212}
         height={212}
-        className="absolute top-12 left-[8vw]"
+        className="absolute top-[28%] left-[8%]"
       />
 
       {/* Text content */}
@@ -19,26 +19,61 @@ function AboutSection() {
         <Title className="mb-14">Présentation</Title>
 
         {/* Description */}
-        <div className="body-md-medium mx-auto mb-14 flex flex-col gap-5">
+        <div className="body-md-medium mx-auto mb-14 flex max-w-225 flex-col gap-5">
           <p>
-            Développeur web front-end depuis un an, je conçois des interfaces{" "}
-            <span className="body-md-bold">modernes</span>,{" "}
-            <span className="body-md-bold">accessibles</span> et{" "}
-            <span className="body-md-bold">performantes</span>.
+            Bonjour, je suis Antonin Chevolleau, développeur front-end
+            spécialisé dans l’intégration d’interfaces{" "}
+            <span className="body-md-bold">fiables</span> et{" "}
+            <span className="body-md-bold">maintenables</span> avec{" "}
+            <span className="body-md-bold">React</span>.
           </p>
 
           <p>
-            Je m’intéresse particulièrement à{" "}
-            <span className="body-md-bold">l’expérience utilisateur</span> et
-            aux <span className="body-md-bold">bonnes pratiques</span> du
-            développement web.
+            Issu d’un parcours d’ingénieur du son, je me suis reconverti dans le
+            développement web avec une forte appétence pour la{" "}
+            <span className="body-md-bold">logique du code</span> et la{" "}
+            <span className="body-md-bold">conception d’interfaces</span>.
           </p>
 
           <p>
-            À travers mes projets, je cherche à créer des applications{" "}
-            <span className="body-md-bold">claires</span>,{" "}
-            <span className="body-md-bold">maintenables</span> et centrées sur
-            les <span className="body-md-bold">besoins des utilisateurs</span>.
+            Je travaille principalement avec{" "}
+            <span className="body-md-bold">React</span>,{" "}
+            <span className="body-md-bold">Next.js</span> et{" "}
+            <span className="body-md-bold">Redux</span>, que j’ai notamment
+            utilisés pour développer une application bancaire intégrant une{" "}
+            <span className="body-md-bold">gestion d’état globale</span> avec{" "}
+            <span className="body-md-bold">
+              persistance des données utilisateur
+            </span>{" "}
+            et{" "}
+            <span className="body-md-bold">
+              mise à jour dynamique de l’interface
+            </span>
+            .
+          </p>
+
+          <p>
+            J’accorde une importance particulière à la{" "}
+            <span className="body-md-bold">structure du code</span> et à la{" "}
+            <span className="body-md-bold">maintenabilité</span>, en prenant le
+            temps de refactoriser,{" "}
+            <span className="body-md-bold">comprendre mes erreurs</span> et{" "}
+            <span className="body-md-bold">améliorer mes implémentations</span>.
+          </p>
+
+          <p>
+            Mon objectif est de produire un code{" "}
+            <span className="body-md-bold">clair</span>,{" "}
+            <span className="body-md-bold">évolutif</span> et{" "}
+            <span className="body-md-bold">compréhensible par une équipe</span>.
+          </p>
+
+          <p>
+            Je recherche aujourd’hui une{" "}
+            <span className="body-md-bold">alternance</span> pour évoluer vers
+            du développement <span className="body-md-bold">full-stack</span>,
+            au sein d’une équipe expérimentée où je pourrai monter rapidement en
+            compétences.
           </p>
         </div>
 
