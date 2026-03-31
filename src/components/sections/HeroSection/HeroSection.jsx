@@ -15,19 +15,19 @@ function HeroSection() {
       <Image
         src={"/images/antonin.png"}
         alt="Photo d'Antonin Chevolleau"
-        width={400}
-        height={430}
-        priority
+        width={912}
+        height={978}
+        sizes="40vw"
         className="absolute bottom-0 left-1/2 h-[69.82vh] w-auto -translate-x-1/2"
-        sizes="(max-width: 768px) 300px, 400px"
       />
 
       {/* Splash image */}
       <Image
         src={"/images/color-splash.png"}
         alt=""
-        width={450}
-        height={300}
+        width={898}
+        height={599}
+        sizes="54vw"
         className="absolute top-[14vh] left-1/2 -z-10 h-[58.49vh] w-auto -translate-x-1/2"
       />
 

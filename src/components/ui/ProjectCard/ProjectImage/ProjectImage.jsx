@@ -21,8 +21,8 @@ function ProjectImage({ src, alt, badges, children }) {
       <Image
         src={src}
         alt={alt}
-        width={350}
-        height={350}
+        width={300}
+        height={208}
         className="h-full w-full object-cover"
       />
 

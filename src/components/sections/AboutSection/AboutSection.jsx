@@ -11,11 +11,11 @@ function AboutSection() {
         alt="Image d'un atome"
         width={212}
         height={212}
-        className="absolute top-22 left-[8vw]"
+        className="absolute top-12 left-[8vw]"
       />
 
       {/* Text content */}
-      <div className="mx-auto my-14.5 w-[46.46vw]">
+      <div className="mx-auto my-14.5 flex w-[46.46vw] flex-col items-center">
         <Title className="mb-14">Présentation</Title>
 
         {/* Description */}
