@@ -1,4 +1,4 @@
-export function CodeIcon({ className, width = 60, height = 60 }) {
+function CodeIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -24,7 +24,7 @@ export function CodeIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export function DeviceIcon({ className, width = 60, height = 60 }) {
+function DeviceIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -50,7 +50,7 @@ export function DeviceIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export function LayoutIcon({ className, width = 60, height = 60 }) {
+function LayoutIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -76,7 +76,7 @@ export function LayoutIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export function SpeedIcon({ className, width = 60, height = 60 }) {
+function SpeedIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -98,7 +98,7 @@ export function SpeedIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export function WebIcon({ className, width = 60, height = 60 }) {
+function WebIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -123,7 +123,7 @@ export function WebIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export function EyeIcon({ className, width = 60, height = 60 }) {
+function EyeIcon({ className, width = 60, height = 60 }) {
   return (
     <svg
       width={width}
@@ -145,7 +145,7 @@ export function EyeIcon({ className, width = 60, height = 60 }) {
   );
 }
 
-export const icons = {
+const icons = {
   code: CodeIcon,
   device: DeviceIcon,
   layout: LayoutIcon,
@@ -153,3 +153,16 @@ export const icons = {
   web: WebIcon,
   eye: EyeIcon,
 };
+
+function Icon({ name, className, size = 60 }) {
+  const IconComponent = icons[name];
+
+  if (!IconComponent) {
+    console.warn(`Icon "${name}" not found`);
+    return null;
+  }
+
+  return <IconComponent className={className} width={size} height={size} />;
+}
+
+export default Icon;

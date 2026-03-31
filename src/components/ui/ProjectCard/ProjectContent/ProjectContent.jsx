@@ -1,4 +1,4 @@
-import ExternalLink from "@/components/navigation/ExternalLink";
+import { ExternalLink } from "@/components/navigation";
 
 function ProjectContent({ title, websiteHref, githubHref }) {
   return (
@@ -12,7 +12,7 @@ function ProjectContent({ title, websiteHref, githubHref }) {
           Visiter
         </ExternalLink>
 
-        <ExternalLink size="sm" href={githubHref}>
+        <ExternalLink size="sm" variant="default" href={githubHref}>
           GitHub
         </ExternalLink>
       </div>

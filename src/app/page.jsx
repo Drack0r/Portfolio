@@ -1,8 +1,10 @@
-import AboutSection from "@/components/sections/AboutSection";
-import HeroSection from "@/components/sections/HeroSection";
-import ProjectsSection from "@/components/sections/ProjectsSection";
-import ServicesSection from "@/components/sections/ServicesSection";
-import SkillsSection from "@/components/sections/SkillsSection";
+import {
+  AboutSection,
+  HeroSection,
+  ProjectsSection,
+  ServicesSection,
+  SkillsSection,
+} from "@/components/sections";
 
 function HomePage() {
   return (
