@@ -56,7 +56,7 @@ function AboutSection() {
             J’accorde une importance particulière à la{" "}
             <span className="body-md-bold">structure du code</span> et à la{" "}
             <span className="body-md-bold">maintenabilité</span>, en prenant le
-            temps de refactoriser,{" "}
+            temps de <span className="body-md-bold">refactoriser</span>,{" "}
             <span className="body-md-bold">comprendre mes erreurs</span> et{" "}
             <span className="body-md-bold">améliorer mes implémentations</span>.
           </p>
