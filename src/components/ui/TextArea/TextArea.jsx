@@ -1,4 +1,4 @@
-function TextArea({ id, label, placeholder }) {
+function TextArea({ id, name, label, placeholder }) {
   return (
     <div className="gap flex flex-col gap-2.5">
       <label htmlFor={id} className="body-md-medium text-white">
@@ -6,7 +6,7 @@ function TextArea({ id, label, placeholder }) {
       </label>
 
       <textarea
-        name=""
+        name={name}
         id={id}
         className="h-38.5 w-125 resize-none rounded-md bg-white pt-5 pl-5"
         placeholder={placeholder}
