@@ -1,0 +1,58 @@
+[
+  {
+    "iconSrc": "/images/icons/html5.png",
+    "iconAlt": "HTML5",
+    "techStack": "HTML",
+    "color": "orange",
+    "progressLevel": 85
+  },
+  {
+    "iconSrc": "/images/icons/css.png",
+    "iconAlt": "CSS",
+    "techStack": "CSS",
+    "color": "blue",
+    "progressLevel": 80
+  },
+  {
+    "iconSrc": "/images/icons/sass.png",
+    "iconAlt": "Sass",
+    "techStack": "Sass",
+    "color": "pink",
+    "progressLevel": 75
+  },
+  {
+    "iconSrc": "/images/icons/tailwindcss.png",
+    "iconAlt": "Tailwind CSS",
+    "techStack": "Tailwind CSS",
+    "color": "cyan",
+    "progressLevel": 60
+  },
+  {
+    "iconSrc": "/images/icons/javascript.png",
+    "iconAlt": "JavaScript",
+    "techStack": "JavaScript",
+    "color": "yellow",
+    "progressLevel": 65
+  },
+  {
+    "iconSrc": "/images/icons/react.png",
+    "iconAlt": "React",
+    "techStack": "React",
+    "color": "teal",
+    "progressLevel": 65
+  },
+  {
+    "iconSrc": "/images/icons/nextjs.png",
+    "iconAlt": "Next.js",
+    "techStack": "Next.js",
+    "color": "gray",
+    "progressLevel": 55
+  },
+  {
+    "iconSrc": "/images/icons/github.png",
+    "iconAlt": "Git & GitHub",
+    "techStack": "Git & GitHub",
+    "color": "black",
+    "progressLevel": 70
+  }
+]
