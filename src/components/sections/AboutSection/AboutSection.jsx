@@ -5,17 +5,20 @@ import { Title } from "@/components/ui";
 
 function AboutSection() {
   return (
-    <section className="relative mt-30 scroll-mt-34" id="about">
+    <section
+      className="relative mt-10 scroll-mt-22 lg:mt-30 lg:scroll-mt-34"
+      id="about"
+    >
       <Image
         src={"/images/atom.svg"}
         alt="Image d'un atome"
         width={212}
         height={212}
-        className="absolute top-[28%] left-[8%]"
+        className="mx-auto lg:absolute lg:top-[28%] lg:left-[8%]"
       />
 
       {/* Text content */}
-      <div className="mx-auto my-14.5 flex w-[46.46vw] flex-col items-center">
+      <div className="mx-auto my-10 flex w-[85vw] flex-col items-center lg:my-14.5 lg:w-[46.46vw]">
         <Title className="mb-14">Présentation</Title>
 
         {/* Description */}
