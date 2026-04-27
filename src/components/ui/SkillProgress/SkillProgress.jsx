@@ -14,15 +14,13 @@ function SkillProgress({ iconSrc, iconAlt, title, progressLevel = 0, color }) {
     black: "bg-black",
   };
 
-  const customClassName = "flex items-center gap-4";
-
   return (
-    <article className={customClassName}>
+    <article className="flex items-center gap-2 lg:gap-4">
       <Image src={iconSrc} alt={iconAlt} width={24} height={24} />
 
       <p className="body-lg-semibold">{title}</p>
 
-      <div className="bg-stroke h-2 w-117.5 rounded-2xl">
+      <div className="bg-stroke h-2 w-[32.5vw] rounded-2xl">
         <div
           className={clsx(
             "h-full rounded-2xl transition-all duration-500",

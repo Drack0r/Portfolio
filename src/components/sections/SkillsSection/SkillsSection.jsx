@@ -3,7 +3,10 @@ import skillItems from "@/data/skills.json";
 
 function SkillsSection() {
   return (
-    <section className="mt-30 scroll-mt-35" id="skills">
+    <section
+      className="mt-10 scroll-mt-22 lg:mt-30 lg:scroll-mt-35"
+      id="skills"
+    >
       <Title className="mx-auto mb-20">Mes compétences</Title>
 
       {/* Progress bars container */}
