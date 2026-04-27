@@ -8,7 +8,7 @@ function TextArea({ id, name, label, placeholder }) {
       <textarea
         name={name}
         id={id}
-        className="h-38.5 w-125 resize-none rounded-md bg-white pt-5 pl-5"
+        className="h-38.5 w-90 resize-none rounded-md bg-white pt-5 pl-5 lg:w-125"
         placeholder={placeholder}
       ></textarea>
     </div>
