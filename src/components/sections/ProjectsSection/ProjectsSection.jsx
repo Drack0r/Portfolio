@@ -34,11 +34,14 @@ function ProjectsSection() {
   };
 
   return (
-    <section className="mt-30 scroll-mt-35" id="projects">
+    <section
+      className="mt-10 scroll-mt-22 lg:mt-30 lg:scroll-mt-35"
+      id="projects"
+    >
       <Title className={"mx-auto mb-18"}>Mes derniers projets</Title>
 
       {/* Card container */}
-      <div className="mx-auto mb-14.5 flex w-166.5 flex-wrap gap-16.5">
+      <div className="mx-auto mb-14.5 flex flex-col items-center gap-16.5 lg:w-166.5 lg:flex-row lg:flex-wrap">
         {projectItems.map((project) => (
           <ProjectCard
             key={project.id}
@@ -68,7 +71,7 @@ function ProjectsSection() {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         overlayClassName="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center"
-        className="relative flex max-w-250 flex-col rounded-2xl border border-black bg-white px-20 py-10 outline-0"
+        className="relative flex max-h-[90vh] w-full max-w-250 flex-col overflow-y-auto rounded-2xl border border-black bg-white px-6 py-8 outline-0 lg:px-20 lg:py-10"
         ariaHideApp={false}
       >
         {selectedProject && (
