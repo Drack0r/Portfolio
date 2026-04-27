@@ -1,5 +1,3 @@
-import { ExternalLink } from "@/components/navigation";
-
 function ProjectContent({ title }) {
   return (
     <>

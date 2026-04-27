@@ -1,0 +1,182 @@
+{
+  "navLinks": [
+    { "id": "home", "href": "#home", "label": "Accueil" },
+    { "id": "about", "href": "#about", "label": "Présentation" },
+    { "id": "projects", "href": "#projects", "label": "Projets" },
+    { "id": "services", "href": "#services", "label": "Services" },
+    { "id": "skills", "href": "#skills", "label": "Compétences" },
+    { "id": "contact", "href": "#contact", "label": "Contact" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "imgSrc": "/images/hanson-lu-gGgoDJRD2WM-unsplash.jpg",
+      "imgAlt": "Appareil photo",
+      "title": "Sophie Bluel",
+      "description": "Site vitrine pour une architecte : présentation des travaux (galerie), authentification, modale pour CRUD les travaux, connexion API.",
+      "context": "Projet réalisé dans le cadre de la formation OpenClassrooms pour une architecte fictive. L’objectif était de transformer une maquette statique en application dynamique connectée à une API.",
+      "objectives": "Intégrer les données dynamiques via API et développer un système d’authentification admin (JWT). Mettre en place une gestion complète des travaux (filtrage, ajout, suppression) avec synchronisation front-end / back-end.",
+      "techStack": "HTML, CSS et JavaScript vanilla, sans framework. Communication avec l’API via fetch et gestion du versioning avec Git/GitHub.",
+      "skills": "Première expérience concrète en JavaScript avec manipulation du DOM et interactions API. J’ai amélioré la maintenabilité en refactorisant une modale complexe en modules orientés objet.",
+      "results": "Application fonctionnelle respectant la maquette et les exigences métier. Ce projet valide ma capacité à développer une interface dynamique complète en JavaScript natif.",
+      "improvements": "Optimisation des performances, accessibilité et SEO. Ajout d’une fonctionnalité de mise à jour des travaux et amélioration de l’architecture globale.",
+      "websiteHref": "#",
+      "githubHref": "#",
+      "badges": [
+        { "src": "/images/icons/html5.png", "alt": "HTML5" },
+        { "src": "/images/icons/css.png", "alt": "CSS3" },
+        { "src": "/images/icons/javascript.png", "alt": "Javascript" }
+      ]
+    },
+    {
+      "id": 2,
+      "imgSrc": "/images/stephen-wheeler-hBh9JbyeCtg-unsplash.jpg",
+      "imgAlt": "Maison au bord du lac",
+      "title": "Kasa",
+      "description": "Application de location immobilière React : routing, pages dynamiques, galerie interactive, animations Sass, gestion erreurs, architecture modulaire, données JSON et UI responsive.",
+      "context": "Projet réalisé dans le cadre de la formation OpenClassrooms pour une plateforme fictive de location d’appartements. L’objectif était de développer une application front-end moderne en React à partir d’une maquette Figma.",
+      "objectives": "Construire une application React complète avec routage dynamique (react-router) et plusieurs pages (Home, Logement, About, 404). Mettre en place une navigation fluide et une architecture de composants cohérente et maintenable.",
+      "techStack": "React (Vite), React Router et Sass pour le styling. Gestion du code avec Git/GitHub et linting avec ESLint.",
+      "skills": "Première expérience complète en React avec structuration d’une application et gestion du routing dynamique. J’ai travaillé le découpage des composants pour respecter le principe de responsabilité unique et éviter une complexité excessive.",
+      "results": "Application responsive fonctionnelle respectant la maquette et les bonnes pratiques React. Ce projet démontre ma capacité à structurer une application front-end moderne avec React.",
+      "improvements": "Optimisation des performances, du SEO et de l’accessibilité. Ajout d’un formulaire de contact dynamique pour améliorer l’interaction utilisateur.",
+      "websiteHref": "#",
+      "githubHref": "#",
+      "badges": [{ "src": "/images/icons/react.png", "alt": "React" }]
+    },
+    {
+      "id": 3,
+      "imgSrc": "/images/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg",
+      "imgAlt": "Pot de fleur avec de l'argent à l'intérieur",
+      "title": "Argent Bank",
+      "description": "Application bancaire React : authentification, dashboard utilisateur, gestion transactions, intégration API, Redux, responsive.",
+      "context": "Projet réalisé dans le cadre de la formation OpenClassrooms pour une banque en ligne fictive. L’objectif était de migrer une interface statique vers une application React avec gestion d’état globale.",
+      "objectives": "Refactoriser une base HTML en application React et mettre en place un state global avec Redux. Implémenter la persistance des données utilisateur et documenter l’API via Swagger.",
+      "techStack": "React, Redux et Redux Persist pour la gestion d’état. Styling avec Sass et gestion de version avec Git/GitHub.",
+      "skills": "Première mise en place d’un state global avec Redux dans une application React. J’ai appris à structurer un store, gérer la persistance des données et connecter efficacement les composants à un état centralisé.",
+      "results": "Application transformée en SPA moderne avec une gestion d’état centralisée et persistante. L’expérience utilisateur est améliorée grâce à une navigation fluide et une conservation des données entre sessions.",
+      "improvements": "Optimisation des performances (lazy loading, memoization) et ajout de tests. Amélioration de l’accessibilité et ajout de fonctionnalités comme le mode sombre ou l’export PDF.",
+      "websiteHref": "#",
+      "githubHref": "#",
+      "badges": [
+        { "src": "/images/icons/react.png", "alt": "React" },
+        { "src": "/images/icons/redux.png", "alt": "Redux" }
+      ]
+    },
+    {
+      "id": 4,
+      "imgSrc": "/images/aldward-castillo-G6ptCJ_6NbA-unsplash.jpg",
+      "imgAlt": "Pizzas",
+      "title": "Pizzeria La Roma",
+      "description": "Site vitrine de pizzeria : maquette figma, routing, pages dynamiques, galerie interactive, optimisation d'images, formulaire de contact.",
+      "context": "Projet personnel de création d’un site vitrine pour une pizzeria fictive. L’objectif était de concevoir un projet complet, de la maquette à la mise en ligne.",
+      "objectives": "Designer l’interface sur Figma puis développer un site multi-pages avec Next.js. Mettre en place une architecture de composants maintenable et une interface responsive.",
+      "techStack": "Next.js et Tailwind CSS pour le développement. Outils de qualité de code avec ESLint, Prettier et plugins associés.",
+      "skills": "Montée en compétences sur Next.js et Tailwind dans un projet complet. J’ai travaillé la maintenabilité du code en structurant les composants pour éviter des classes utilitaires trop complexes.",
+      "results": "Site déployé sur Vercel avec une interface responsive et cohérente. Ce projet démontre ma capacité à gérer un projet de bout en bout : design, développement et mise en production.",
+      "improvements": "Amélioration des animations, du SEO et de l’accessibilité. Ajout de fonctionnalités comme les avis clients ou un mode sombre.",
+      "websiteHref": "#",
+      "githubHref": "#",
+      "badges": [
+        { "src": "/images/icons/nextjs.png", "alt": "Next.js" },
+        { "src": "/images/icons/tailwindcss.png", "alt": "Tailwind CSS" }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "id": "frontend",
+      "title": "Développement front-end",
+      "description": "Développement d'interfaces web modernes, performantes et accessibles.",
+      "icon": "code"
+    },
+    {
+      "id": "responsive",
+      "title": "Responsive",
+      "description": "Création de sites web adaptatifs s'ajustant parfaitement à tous les écrans.",
+      "icon": "device"
+    },
+    {
+      "id": "ux/ui",
+      "title": "UX / UI",
+      "description": "Conception d'interfaces utilisateur intuitives et d'expériences engageantes.",
+      "icon": "layout"
+    },
+    {
+      "id": "perfs",
+      "title": "Performances",
+      "description": "Optimisation de la vitesse et des performances pour une navigation fluide.",
+      "icon": "speed"
+    },
+    {
+      "id": "seo",
+      "title": "SEO",
+      "description": "Amélioration du référencement naturel pour augmenter votre visibilité en ligne.",
+      "icon": "web"
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibilité",
+      "description": "Développement de sites web inclusifs et accessibles à tous les utilisateurs.",
+      "icon": "eye"
+    }
+  ],
+  "skills": [
+    {
+      "iconSrc": "/images/icons/html5.png",
+      "iconAlt": "HTML5",
+      "techStack": "HTML",
+      "color": "orange",
+      "progressLevel": 85
+    },
+    {
+      "iconSrc": "/images/icons/css.png",
+      "iconAlt": "CSS",
+      "techStack": "CSS",
+      "color": "blue",
+      "progressLevel": 80
+    },
+    {
+      "iconSrc": "/images/icons/sass.png",
+      "iconAlt": "Sass",
+      "techStack": "Sass",
+      "color": "pink",
+      "progressLevel": 75
+    },
+    {
+      "iconSrc": "/images/icons/tailwindcss.png",
+      "iconAlt": "Tailwind CSS",
+      "techStack": "Tailwind CSS",
+      "color": "cyan",
+      "progressLevel": 60
+    },
+    {
+      "iconSrc": "/images/icons/javascript.png",
+      "iconAlt": "JavaScript",
+      "techStack": "JavaScript",
+      "color": "yellow",
+      "progressLevel": 65
+    },
+    {
+      "iconSrc": "/images/icons/react.png",
+      "iconAlt": "React",
+      "techStack": "React",
+      "color": "teal",
+      "progressLevel": 65
+    },
+    {
+      "iconSrc": "/images/icons/nextjs.png",
+      "iconAlt": "Next.js",
+      "techStack": "Next.js",
+      "color": "gray",
+      "progressLevel": 55
+    },
+    {
+      "iconSrc": "/images/icons/github.png",
+      "iconAlt": "Git & GitHub",
+      "techStack": "Git & GitHub",
+      "color": "black",
+      "progressLevel": 70
+    }
+  ]
+}

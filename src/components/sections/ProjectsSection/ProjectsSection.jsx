@@ -68,7 +68,7 @@ function ProjectsSection() {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         overlayClassName="fixed inset-0 z-[9999] bg-black/50 flex items-center justify-center"
-        className="relative flex max-w-[1000px] flex-col rounded-2xl border border-black bg-white px-20 py-10 outline-0"
+        className="relative flex max-w-250 flex-col rounded-2xl border border-black bg-white px-20 py-10 outline-0"
         ariaHideApp={false}
       >
         {selectedProject && (
