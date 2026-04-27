@@ -10,6 +10,7 @@ function ExternalLink({
   iconSrc,
   iconAlt,
   className,
+  ...props
 }) {
   const isMailto = href.startsWith("mailto:");
 
@@ -28,6 +29,7 @@ function ExternalLink({
       target={isMailto ? undefined : "_blank"}
       rel={isMailto ? undefined : "noopener noreferrer"}
       className={customClassName}
+      {...props}
     >
       {/* Icon */}
       {(variant === "simpleIcon" ||

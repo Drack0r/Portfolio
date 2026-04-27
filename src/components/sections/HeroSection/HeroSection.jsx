@@ -6,17 +6,19 @@ function HeroSection() {
   return (
     <section className="relative h-[calc(100vh-80px)] scroll-mt-40" id="home">
       {/* Text content */}
-      <header className="mx-auto flex w-fit flex-col items-center gap-5 pt-13.5">
-        <p className="heading-6">Bonjour, je suis Antonin Chevolleau,</p>
-        <h1 className="heading-1">Développeur front-end</h1>
+      <header className="mx-auto flex w-fit flex-col items-center gap-5 pt-10 lg:pt-13.5">
+        <p className="body-lg-bold lg:heading-6">
+          Bonjour, je suis Antonin Chevolleau,
+        </p>
+        <h1 className="heading-4 lg:heading-1">Développeur front-end</h1>
       </header>
 
       {/* Photo */}
       <Image
         src={"/images/antonin.png"}
         alt="Photo d'Antonin Chevolleau"
-        width={912}
-        height={978}
+        width={3648}
+        height={3872}
         sizes="40vw"
         className="absolute bottom-0 left-1/2 h-[69.82vh] w-auto -translate-x-1/2"
       />
@@ -25,8 +27,8 @@ function HeroSection() {
       <Image
         src={"/images/color-splash.png"}
         alt=""
-        width={898}
-        height={599}
+        width={6001}
+        height={4001}
         sizes="54vw"
         className="absolute top-[14vh] left-1/2 -z-10 h-[58.49vh] w-auto -translate-x-1/2"
       />
@@ -34,7 +36,7 @@ function HeroSection() {
       {/* Actions */}
       <nav
         aria-label="Liens de navigation"
-        className="absolute right-[2.7vw] bottom-[3.9vh] flex w-fit flex-col items-center gap-6"
+        className="absolute bottom-[3.9vh] flex w-screen items-center justify-center gap-6 lg:right-[2.7vw] lg:w-fit lg:flex-col"
       >
         <ExternalLink
           href={"mailto:antochevolleau@gmail.com"}
@@ -50,6 +52,7 @@ function HeroSection() {
           variant="icon"
           iconSrc={"/images/icons/github.png"}
           iconAlt={"Logo de GitHub"}
+          className="bg-white"
         >
           GitHub
         </ExternalLink>
