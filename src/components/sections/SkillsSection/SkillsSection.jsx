@@ -10,7 +10,7 @@ function SkillsSection() {
       <Title className="mx-auto mb-20">Mes compétences</Title>
 
       {/* Progress bars container */}
-      <div className="mx-auto mb-10 flex w-fit flex-col items-end gap-6 lg:mb-30">
+      <div className="mx-auto mb-10 flex w-fit flex-col items-center gap-6 lg:mb-30 lg:items-end">
         {skillItems.map((skill) => (
           <SkillProgress
             key={skill.techStack}

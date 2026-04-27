@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { AnchorLink } from "@/components/navigation";
 import AnchorLinks from "@/data/nav-links.json";
 

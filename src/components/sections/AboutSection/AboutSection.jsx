@@ -14,7 +14,7 @@ function AboutSection() {
         alt="Image d'un atome"
         width={212}
         height={212}
-        className="mx-auto lg:absolute lg:top-[28%] lg:left-[8%]"
+        className="mx-auto lg:absolute lg:top-[28%] lg:left-[5%]"
       />
 
       {/* Text content */}

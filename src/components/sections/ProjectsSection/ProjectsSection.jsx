@@ -41,7 +41,7 @@ function ProjectsSection() {
       <Title className={"mx-auto mb-18"}>Mes derniers projets</Title>
 
       {/* Card container */}
-      <div className="mx-auto mb-14.5 flex flex-col items-center gap-16.5 lg:w-166.5 lg:flex-row lg:flex-wrap">
+      <div className="mx-auto mb-14.5 flex flex-col items-center gap-16.5 md:w-166.5 md:flex-row md:flex-wrap">
         {projectItems.map((project) => (
           <ProjectCard
             key={project.id}
