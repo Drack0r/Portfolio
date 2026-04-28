@@ -10,7 +10,7 @@ function ServicesSection() {
       <Title className="mx-auto mb-14.5">Ce que je propose</Title>
 
       {/* ServiceCard container */}
-      <div className="mx-auto mb-14.5 flex w-[90vw] max-w-300 flex-wrap justify-center gap-24.25">
+      <div className="mx-auto mb-14.5 flex w-[90vw] max-w-300 flex-wrap justify-center gap-12 lg:gap-24.25">
         {servicesData.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
