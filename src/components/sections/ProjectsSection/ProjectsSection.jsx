@@ -12,9 +12,9 @@ import {
   ProjectImage,
   ProjectOverlay,
 } from "@/components/ui/ProjectCard";
-import projectItems from "@/data/projects.json";
+// import projectItems from "@/data/projects.json";
 
-function ProjectsSection() {
+function ProjectsSection({ projects = [] }) {
   const [hoveredCardId, setHoveredCardId] = useState(null);
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -42,11 +42,11 @@ function ProjectsSection() {
 
       {/* Card container */}
       <div className="mx-auto mb-14.5 flex flex-col items-center gap-16.5 md:w-166.5 md:flex-row md:flex-wrap">
-        {projectItems.map((project) => (
+        {projects.map((project) => (
           <ProjectCard
-            key={project.id}
-            isHover={hoveredCardId === project.id}
-            onMouseEnter={() => setHoveredCardId(project.id)}
+            key={project._id}
+            isHover={hoveredCardId === project._id}
+            onMouseEnter={() => setHoveredCardId(project._id)}
             onMouseLeave={() => setHoveredCardId(null)}
             onClick={() => openModal(project)}
           >
@@ -57,7 +57,7 @@ function ProjectsSection() {
             >
               <ProjectOverlay
                 description={project.description}
-                isVisible={hoveredCardId === project.id}
+                isVisible={hoveredCardId === project._id}
               />
             </ProjectImage>
 

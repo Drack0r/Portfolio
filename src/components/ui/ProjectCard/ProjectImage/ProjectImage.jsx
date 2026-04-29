@@ -12,7 +12,7 @@ function ProjectImage({ src, alt, badges, children }) {
       {badges && badges.length > 0 && (
         <div className="absolute top-2 left-2 z-20 flex gap-1">
           {badges.map((badge) => (
-            <Badge key={badge.src} src={badge.src} alt={badge.alt} />
+            <Badge key={badge._id} src={badge.src} alt={badge.alt} />
           ))}
         </div>
       )}

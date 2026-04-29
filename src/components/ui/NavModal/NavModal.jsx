@@ -6,9 +6,9 @@ import { useState } from "react";
 import Modal from "react-modal";
 
 import { AnchorLink } from "@/components/navigation";
-import AnchorLinks from "@/data/nav-links.json";
+// import AnchorLinks from "@/data/nav-links.json";
 
-function NavModal() {
+function NavModal({ links = [] }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -43,8 +43,8 @@ function NavModal() {
 
         <nav>
           <ul className="flex flex-col gap-5">
-            {AnchorLinks.map((link) => (
-              <li key={link.id} onClick={closeModal}>
+            {links.map((link) => (
+              <li key={link._id} onClick={closeModal}>
                 <AnchorLink href={link.href}>{link.label}</AnchorLink>
               </li>
             ))}

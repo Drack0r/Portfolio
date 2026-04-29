@@ -5,19 +5,22 @@ import {
   ServicesSection,
   SkillsSection,
 } from "@/components/sections";
+import { getPortfolioData } from "@/lib/api";
 
-function HomePage() {
+async function HomePage() {
+  const { projects, services, skills } = await getPortfolioData();
+
   return (
     <>
       <HeroSection />
 
       <AboutSection />
 
-      <ProjectsSection />
+      <ProjectsSection projects={projects} />
 
-      <ServicesSection />
+      <ServicesSection services={services} />
 
-      <SkillsSection />
+      <SkillsSection skills={skills} />
     </>
   );
 }
