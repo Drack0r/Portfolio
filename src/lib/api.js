@@ -2,7 +2,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 async function fetcher(endpoint) {
   const res = await fetch(`${API_URL}${endpoint}`, {
-    cache: "force-cache",
+    next: { revalidate: 60 },
   });
 
   if (!res.ok) {
