@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 
 import { ExternalLink } from "@/components/navigation";
+import RevealOnScroll from "@/components/RevealOnScroll";
+import { blurIn, fadeUp } from "@/variants/animation";
 
 function HeroSection() {
   return (
@@ -9,12 +13,14 @@ function HeroSection() {
       id="home"
     >
       {/* Text content */}
-      <header className="mx-auto flex w-fit flex-col items-center gap-5 pt-10 lg:pt-13.5">
-        <p className="body-lg-bold lg:heading-6">
-          Bonjour, je suis Antonin Chevolleau,
-        </p>
-        <h1 className="heading-4 lg:heading-1">Développeur front-end</h1>
-      </header>
+      <RevealOnScroll variant={fadeUp}>
+        <header className="mx-auto flex w-fit flex-col items-center gap-5 pt-10 lg:pt-13.5">
+          <p className="body-lg-bold lg:heading-6">
+            Bonjour, je suis Antonin Chevolleau,
+          </p>
+          <h1 className="heading-4 lg:heading-1">Développeur front-end</h1>
+        </header>
+      </RevealOnScroll>
 
       {/* Photo + Splash */}
       <div
@@ -24,21 +30,23 @@ function HeroSection() {
           height: "min(69.82vh, calc(100% - 200px))",
         }}
       >
-        <Image
-          src={"/images/color-splash.png"}
-          alt=""
-          width={6001}
-          height={4001}
-          sizes="54vw"
-          className="absolute top-[-14%] left-1/2 -z-10 h-[84%] w-auto -translate-x-1/2"
-        />
-        <Image
-          src={"/images/antonin.png"}
-          alt="Photo d'Antonin Chevolleau"
-          fill
-          sizes="40vw"
-          className="object-contain"
-        />
+        <RevealOnScroll variant={blurIn} className="absolute inset-0">
+          <Image
+            src={"/images/color-splash.png"}
+            alt=""
+            width={6001}
+            height={4001}
+            sizes="54vw"
+            className="absolute top-[-14%] left-1/2 -z-10 h-[84%] w-auto -translate-x-1/2"
+          />
+          <Image
+            src={"/images/antonin.png"}
+            alt="Photo d'Antonin Chevolleau"
+            fill
+            sizes="40vw"
+            className="object-contain"
+          />
+        </RevealOnScroll>
       </div>
 
       {/* Actions */}

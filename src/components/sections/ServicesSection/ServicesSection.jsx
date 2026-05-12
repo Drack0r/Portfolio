@@ -1,5 +1,8 @@
+"use client";
+
+import RevealOnScroll from "@/components/RevealOnScroll";
 import { ServiceCard, Title } from "@/components/ui";
-// import servicesData from "@/data/services.json";
+import { pop } from "@/variants/animation";
 
 function ServicesSection({ services = [] }) {
   return (
@@ -11,8 +14,10 @@ function ServicesSection({ services = [] }) {
 
       {/* ServiceCard container */}
       <div className="mx-auto mb-14.5 flex w-[90vw] max-w-300 flex-wrap justify-center gap-12 lg:gap-24.25">
-        {services.map((service) => (
-          <ServiceCard key={service._id} service={service} />
+        {services.map((service, index) => (
+          <RevealOnScroll key={service._id} variant={pop} delay={index}>
+            <ServiceCard service={service} />
+          </RevealOnScroll>
         ))}
       </div>
     </section>

@@ -6,13 +6,14 @@ import { useEffect, useState } from "react";
 import Modal from "react-modal";
 
 import { ExternalLink } from "@/components/navigation";
+import RevealOnScroll from "@/components/RevealOnScroll";
 import { ProjectCard, Title } from "@/components/ui";
 import {
   ProjectContent,
   ProjectImage,
   ProjectOverlay,
 } from "@/components/ui/ProjectCard";
-// import projectItems from "@/data/projects.json";
+import { pop } from "@/variants/animation";
 
 function ProjectsSection({ projects = [] }) {
   const [hoveredCardId, setHoveredCardId] = useState(null);
@@ -42,27 +43,28 @@ function ProjectsSection({ projects = [] }) {
 
       {/* Card container */}
       <div className="mx-auto mb-14.5 flex flex-col items-center gap-16.5 md:w-166.5 md:flex-row md:flex-wrap">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project._id}
-            isHover={hoveredCardId === project._id}
-            onMouseEnter={() => setHoveredCardId(project._id)}
-            onMouseLeave={() => setHoveredCardId(null)}
-            onClick={() => openModal(project)}
-          >
-            <ProjectImage
-              src={project.imgSrc}
-              alt={project.imgAlt}
-              badges={project.badges}
+        {projects.map((project, index) => (
+          <RevealOnScroll key={project._id} variant={pop} delay={index}>
+            <ProjectCard
+              isHover={hoveredCardId === project._id}
+              onMouseEnter={() => setHoveredCardId(project._id)}
+              onMouseLeave={() => setHoveredCardId(null)}
+              onClick={() => openModal(project)}
             >
-              <ProjectOverlay
-                description={project.description}
-                isVisible={hoveredCardId === project._id}
-              />
-            </ProjectImage>
+              <ProjectImage
+                src={project.imgSrc}
+                alt={project.imgAlt}
+                badges={project.badges}
+              >
+                <ProjectOverlay
+                  description={project.description}
+                  isVisible={hoveredCardId === project._id}
+                />
+              </ProjectImage>
 
-            <ProjectContent title={project.title} />
-          </ProjectCard>
+              <ProjectContent title={project.title} />
+            </ProjectCard>
+          </RevealOnScroll>
         ))}
       </div>
 
