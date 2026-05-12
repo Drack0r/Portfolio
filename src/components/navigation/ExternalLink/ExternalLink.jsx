@@ -19,8 +19,8 @@ function ExternalLink({
     className,
     (variant === "default" || variant === "icon") && "border border-dark",
     (variant === "dark" || variant === "icon-dark") && "text-white bg-black",
-    variant !== "simpleIcon" && size === "md" && "px-6 py-3",
-    variant !== "simpleIcon" && size === "sm" && "px-3 py-1.5",
+    variant !== "simpleIcon" && size === "md" && "p-3 md:px-6 md:py-3",
+    variant !== "simpleIcon" && size === "sm" && "p-3 md:px-3 md:py-1.5",
   );
 
   return (

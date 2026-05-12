@@ -10,14 +10,17 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Mon Portfolio",
-  description: "#", // todo: add description
+  title: "Antonin Chevolleau | Portfolio",
+  description:
+    "Développeur frontend, je construis des interfaces qui fonctionnent aussi bien qu'elles se regardent. J'aime autant résoudre un bug complexe que peaufiner une animation. Mon truc ? Adapter mon approche à chaque projet, sans m'enfermer dans un seul outil ou framework. J'apprends vite, je livre propre.",
 };
 
 function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${poppins.className} text-dark relative mx-auto max-w-480 bg-white antialiased`}
         suppressHydrationWarning

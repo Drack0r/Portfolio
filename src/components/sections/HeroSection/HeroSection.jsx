@@ -19,7 +19,10 @@ function HeroSection() {
       {/* Photo + Splash */}
       <div
         className="absolute bottom-0 left-1/2 h-[69.82vh] -translate-x-1/2"
-        style={{ aspectRatio: "3648 / 3872" }}
+        style={{
+          aspectRatio: "3648 / 3872",
+          height: "min(69.82vh, calc(100% - 200px))",
+        }}
       >
         <Image
           src={"/images/color-splash.png"}
