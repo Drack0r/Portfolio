@@ -1,0 +1,51 @@
+import Image from "next/image";
+
+import clsx from "clsx";
+
+function ExternalLink({
+  href,
+  variant = "default", // "default" | "icon" | "simpleIcon"
+  size = "md", // "sm" | "md"
+  children,
+  iconSrc,
+  iconAlt,
+  className,
+  ...props
+}) {
+  const isMailto = href.startsWith("mailto:");
+
+  const customClassName = clsx(
+    "body-md-medium flex w-fit gap-2 rounded-md  duration-300 hover:opacity-60",
+    className,
+    (variant === "default" || variant === "icon") && "border border-dark",
+    (variant === "dark" || variant === "icon-dark") && "text-white bg-black",
+    variant !== "simpleIcon" && size === "md" && "p-3 md:px-6 md:py-3",
+    variant !== "simpleIcon" && size === "sm" && "p-3 md:px-3 md:py-1.5",
+  );
+
+  return (
+    <a
+      href={href}
+      target={isMailto ? undefined : "_blank"}
+      rel={isMailto ? undefined : "noopener noreferrer"}
+      className={customClassName}
+      {...props}
+    >
+      {/* Icon */}
+      {(variant === "simpleIcon" ||
+        variant === "icon" ||
+        variant === "icon-dark") && (
+        <Image
+          src={iconSrc}
+          alt={iconAlt}
+          width={24}
+          height={24}
+          className="h-6 w-6"
+        />
+      )}
+      {variant !== "simpleIcon" && children}
+    </a>
+  );
+}
+
+export default ExternalLink;

@@ -1,12 +1,26 @@
-import AboutSection from "@/components/sections/AboutSection";
-import HeroSection from "@/components/sections/HeroSection";
+import {
+  AboutSection,
+  HeroSection,
+  ProjectsSection,
+  ServicesSection,
+  SkillsSection,
+} from "@/components/sections";
+import { getPortfolioData } from "@/lib/api";
 
-function HomePage() {
+async function HomePage() {
+  const { projects, services, skills } = await getPortfolioData();
+
   return (
     <>
       <HeroSection />
 
       <AboutSection />
+
+      <ProjectsSection projects={projects} />
+
+      <ServicesSection services={services} />
+
+      <SkillsSection skills={skills} />
     </>
   );
 }

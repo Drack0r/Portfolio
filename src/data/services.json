@@ -1,0 +1,38 @@
+[
+  {
+    "id": "frontend",
+    "title": "Développement front-end",
+    "description": "Développement d'interfaces web modernes, performantes et accessibles.",
+    "icon": "code"
+  },
+  {
+    "id": "responsive",
+    "title": "Responsive",
+    "description": "Création de sites web adaptatifs s'ajustant parfaitement à tous les écrans.",
+    "icon": "device"
+  },
+  {
+    "id": "ux/ui",
+    "title": "UX / UI",
+    "description": "Conception d'interfaces utilisateur intuitives et d'expériences engageantes.",
+    "icon": "layout"
+  },
+  {
+    "id": "perfs",
+    "title": "Performances",
+    "description": "Optimisation de la vitesse et des performances pour une navigation fluide.",
+    "icon": "speed"
+  },
+  {
+    "id": "seo",
+    "title": "SEO",
+    "description": "Amélioration du référencement naturel pour augmenter votre visibilité en ligne.",
+    "icon": "web"
+  },
+  {
+    "id": "accessibility",
+    "title": "Accessibilité",
+    "description": "Développement de sites web inclusifs et accessibles à tous les utilisateurs.",
+    "icon": "eye"
+  }
+]
