@@ -81,7 +81,7 @@ function AboutSection() {
         </div>
 
         <ExternalLink
-          href={"#"}
+          href={"/cv.pdf"}
           variant="icon-dark"
           iconSrc={"/images/icons/briefcase-alt.png"}
           iconAlt={"Icône de sac de travail"}
