@@ -26,7 +26,7 @@ function HeroSection() {
       <div
         className="absolute bottom-0 left-1/2 h-[69.82vh] -translate-x-1/2"
         style={{
-          aspectRatio: "3648 / 3872",
+          aspectRatio: "1408 / 1056",
           height: "min(69.82vh, calc(100% - 200px))",
         }}
       >
@@ -37,13 +37,15 @@ function HeroSection() {
             width={6001}
             height={4001}
             sizes="54vw"
+            priority
             className="absolute top-[-14%] left-1/2 -z-10 h-[84%] w-auto -translate-x-1/2"
           />
           <Image
-            src={"/images/antonin.png"}
+            src="/images/fdf6fc40-30cc-4c1d-93ec-4e8c2cffc2d6.png"
             alt="Photo d'Antonin Chevolleau"
             fill
-            sizes="40vw"
+            sizes="60vw"
+            priority
             className="object-contain"
           />
         </RevealOnScroll>
