@@ -50,6 +50,13 @@ function ProjectsSection({ projects = [] }) {
               onMouseEnter={() => setHoveredCardId(project._id)}
               onMouseLeave={() => setHoveredCardId(null)}
               onClick={() => openModal(project)}
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  openModal(project);
+                }
+              }}
             >
               <ProjectImage
                 src={project.imgSrc}

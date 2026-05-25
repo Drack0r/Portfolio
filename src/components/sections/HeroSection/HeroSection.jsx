@@ -18,7 +18,7 @@ function HeroSection() {
           <p className="body-lg-bold lg:heading-6">
             Bonjour, je suis Antonin Chevolleau,
           </p>
-          <h1 className="heading-4 lg:heading-1">Développeur front-end</h1>
+          <h1 className="heading-4 lg:heading-1 z-10">Développeur front-end</h1>
         </header>
       </RevealOnScroll>
 
